@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0F32E8B0-A081-4729-B0F9-F7C0BD032B62}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HMUygulamasi</RootNamespace>
+    <AssemblyName>HMUygulamasi</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\FormHesapMakinesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormHesapMakinesi.Designer.cs">
+      <DependentUpon>FormHesapMakinesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kutuphane\HesapMakinesi.cs" />
+    <Compile Include="Kutuphane\IHesapMakinesi.cs" />
+    <Compile Include="Kutuphane\IslemTipleri\IslemBolme.cs" />
+    <Compile Include="Kutuphane\IslemTipleri\IslemCarpma.cs" />
+    <Compile Include="Kutuphane\IslemTipleri\IIslem.cs" />
+    <Compile Include="Kutuphane\IslemTipleri\Islem.cs" />
+    <Compile Include="Kutuphane\IslemTipleri\IslemCikarma.cs" />
+    <Compile Include="Kutuphane\IslemTipleri\IslemFactory.cs" />
+    <Compile Include="Kutuphane\IslemTipleri\IslemToplama.cs" />
+    <Compile Include="Kutuphane\Sabitler\Degerler.cs" />
+    <Compile Include="Kutuphane\Sabitler\IslemTurleri.cs" />
+    <Compile Include="Kutuphane\Sabitler\Karakterler.cs" />
+    <Compile Include="Kutuphane\Sabitler\SayiTurleri.cs" />
+    <Compile Include="Kutuphane\SayiTipleri\ISayiTipi.cs" />
+    <Compile Include="Kutuphane\SayiTipleri\Sayi.cs" />
+    <Compile Include="Kutuphane\SayiTipleri\SayiDouble.cs" />
+    <Compile Include="Kutuphane\SayiTipleri\SayiFactory.cs" />
+    <Compile Include="Kutuphane\SayiTipleri\SayiInt.cs" />
+    <Compile Include="Kutuphane\Yardimcilar\KarakterFiltresi.cs" />
+    <Compile Include="Presenters\HesapMakinesiPresenter.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\IViewHesapMakinesi.cs" />
+    <EmbeddedResource Include="Forms\FormHesapMakinesi.resx">
+      <DependentUpon>FormHesapMakinesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,7 @@
+C:\PROJECTS\HMUygulamasi\HMUygulamasi\bin\Debug\HMUygulamasi.exe
+C:\PROJECTS\HMUygulamasi\HMUygulamasi\bin\Debug\HMUygulamasi.pdb
+C:\PROJECTS\HMUygulamasi\HMUygulamasi\obj\x86\Debug\HMUygulamasi.Properties.Resources.resources
+C:\PROJECTS\HMUygulamasi\HMUygulamasi\obj\x86\Debug\HMUygulamasi.csproj.GenerateResource.Cache
+C:\PROJECTS\HMUygulamasi\HMUygulamasi\obj\x86\Debug\HMUygulamasi.exe
+C:\PROJECTS\HMUygulamasi\HMUygulamasi\obj\x86\Debug\HMUygulamasi.pdb
+C:\PROJECTS\HMUygulamasi\HMUygulamasi\obj\x86\Debug\HMUygulamasi.Forms.FormHesapMakinesi.resources
